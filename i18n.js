@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
   debug: true,
-  fallbackLng: "en",
+  fallbackLng: "it",
   interpolation: {
     escapeValue: false,
   },
@@ -11,10 +11,11 @@ i18n.use(initReactI18next).init({
     it: {
       translation: {
         parola1: "Scorri",
-        parola2: "per",
-        parola3: "vedere",
-        parola4: "la",
-        parola5: "magia",
+        parola2: "giù",
+        parola3: "per",
+        parola4: "scoprire",
+        parola5: "la magia",
+        parolaDopo: "qualche cazzata",
       },
     },
     en: {
@@ -24,6 +25,7 @@ i18n.use(initReactI18next).init({
         parola3: "to",
         parola4: "see",
         parola5: "magic",
+        parolaDopo: "some bullshit",
       },
     },
   },

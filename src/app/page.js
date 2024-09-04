@@ -50,12 +50,12 @@ export default function Home() {
   return (
     <main className="bg-neutral-800">
       {/* <Header text="Exodia" ref={ref} /> */}
-      <div className="flex min-h-screen items-center justify-center flex-col bg-amber-50">
+      <div className="flex min-h-screen items-center justify-center flex-col ">
         <Image src={logo} alt="logo" className="max-w-[80vw]" priority />
         <Title words={words} />
       </div>
       <BackgroundBeams />
-      <Gemini />
+      <Gemini className={` my-0 md:my-60`} />
       <TimelineDemo />
     </main>
   );

@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .responsive-svg {
+      viewBox: 0 0 1440 1600; /* Aumenta l'altezza del viewBox per schermi più piccoli */
+    }
+  
+    .path-1 { transform: translateY(0px); }
+    .path-2 { transform: translateY(100px); }
+    .path-3 { transform: translateY(200px); }
+    .path-4 { transform: translateY(300px); }
+    .path-5 { transform: translateY(400px); }
+  }
+  
+  /* Aggiungi più media queries se necessario per altri breakpoint */

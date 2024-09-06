@@ -6,6 +6,7 @@ import React, { useEffect, useMemo, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import "@/app/styles/teleffoniSVG.css";
 
 const transition = {
   duration: 0,

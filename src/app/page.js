@@ -9,6 +9,7 @@ import logo from "../../public/assets/logo_exodia.png";
 import Header from "@/components/layout/Header";
 import { TypewriterEffectSmooth as Title } from "@/components/ui/title";
 import { useTranslation } from "react-i18next";
+import { Spinner } from "@/components/reusables/Spinner";
 import i18n from "../../i18n";
 
 // Importazione dinamica dei BackgroundBeams
@@ -16,7 +17,7 @@ const BackgroundBeams = dynamic(
   () => import("@/components/ui/bg").then((mod) => mod.BackgroundBeams),
   {
     ssr: false,
-    loading: () => <div>Loading...</div>,
+    loading: () => <Spinner />,
   }
 );
 
@@ -54,7 +55,10 @@ export default function Home() {
         <Image src={logo} alt="logo" className="max-w-[80vw]" priority />
         <Title words={words} />
       </div>
-      <BackgroundBeams />
+      {setTimeout(() => {
+        return <BackgroundBeams />;
+      }, 3000)}
+
       <Gemini className={` my-0 md:my-60`} />
       <TimelineDemo />
     </main>
